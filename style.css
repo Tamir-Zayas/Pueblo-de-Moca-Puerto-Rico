@@ -23,7 +23,7 @@ html {
 }
 /* Configuración del cuerpo de proyecto */
 body {
-  background-color: var(--primario3);
+  background-color: var(--primario1);
   color: var(--blanco);
   font-family: var(--fuenteParrafo);
   font-size: 1.6rem;
@@ -102,6 +102,7 @@ img {
         padding-top: 4rem;
     }
 }
+
 /** Estilo del logo **/
 .logo {
     color: var(--blanco);
@@ -109,6 +110,10 @@ img {
 
 .logo_nombre {
     font-weight: 800;
+}
+
+.logo_bold {
+    font-weight: 400;
 }
 /** Estilo de navegación **/
 .navegación {
@@ -140,10 +145,23 @@ img {
     font-size: 2.2rem;
     color: var(--blanco);
 }
-
-
-  
-
-      
-
-  
+/** Contenido: main **/
+.moca {
+    font-weight: 900;
+    font-size: 1.75rem;
+}
+.main_text p {
+    padding-bottom: 1rem;
+}
+#map {
+    text-align: center;
+}
+#map image {
+    width: 80%;
+}
+/** Footer o Pie de la página **/
+.footer {
+    background-color: var(--primario3);
+    padding-bottom: 3rem;
+    marging-top: 4rem;
+}
