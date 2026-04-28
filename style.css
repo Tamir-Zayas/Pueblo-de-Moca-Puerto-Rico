@@ -77,6 +77,30 @@ img {
     text-align: center;
 }
 .header {
-    background-image:url();
+    background-image:url(images/Castillo de Moca);
+    height: 55rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.header_text {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 4rem;
+}
+@media (min-width: 768x) {
+    .header_text{
+        marin-top:12rem;
+    }
+}
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+        text-align: center;
+        padding-top: 4rem;
+    }
+}
   
   
