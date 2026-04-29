@@ -280,24 +280,60 @@ img {
 .widget-ruta_info {
     font-weight: normal;
 }
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-  
-
-
-
+/** Gastronomía **/
+.gastronomia_imagen {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.gastronomia_imagen img {
+    width: 80%;
+}
+.restaurante {
+    padding: 3rem 0;
+    border-bottom: 2px solid var(--gris);
+}
+@media (min-width: 768px) {
+    .restaurante {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.restaurante:last-of-type {
+    border: none;
+}
+.restaurante_info {
+    font-weight: normal;
+    font-size: 2rem;
+}
+/** Contacto **/
+.contacto-bg {
+    background-image: url(../img/contacto.webp);
+    height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 4rem;
+}
+.campo { display: flex;
+    margin-bottom: 2rem;
+       }
+.campo_label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+    height: 2rem;
+}
+.campo_field {
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo_field--textarea {
+    height: 20rem;
+}
+ 
