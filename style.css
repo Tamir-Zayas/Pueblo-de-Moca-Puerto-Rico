@@ -221,8 +221,65 @@ img {
     opacity: 0.7;
     border-radius: 0;
 }
-
-
+/** Atractivos.html **/
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }  }
+.contenido-principal_text {
+    padding-bottom: 3rem;
+    font-size: 100%;
+}
+.atractivo {
+    border-bottom: 2px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.atractivo:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.boton { 
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+    }
+}
+.boton:hover { cursor: pointer; }
+.boton--primario {
+    background-color: var(--negro);
+}
+.boton--secundario {
+    background-color: var(--primario3);
+}
+.rutas { list-style: none; }
+.widget-ruta {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.widget-ruta {
+    border: none;
+    margin-bottom: 0;
+}
+.widget-ruta_label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.widget-ruta_info {
+    font-weight: normal;
+}
 
 
 
