@@ -3,7 +3,7 @@
   --fuenteHeading: 'PT Sans', sans-serif;
   --fuenteParrafo: 'Open Sans', sans-serif;
 
-  --primario1: red violet;
+  --primario1: #c71585; /* MediumVioletRed */
   --primario2: blue;
   --primario3: yellow;
   --primario4: green;
@@ -29,6 +29,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.75;
 }
+
 /** Propiedades Globales **/
 .contenedor {
 /** max-width: 120rem;
@@ -41,82 +42,65 @@ body {
 a {
     text-decoration: none;
 }
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: var(--fuenteHeading);
     line-height: 1.25;
 }
+
 p {
     font-family: var(--fuenteParrafo);
 }
-h1 {
-    font-size: 6rem;
-}
-h2 {
-    font-size: 4.5rem;
-}
-h3 {
-    font-size: 3.5rem;
-}
-h4 {
-    font-size: 3rem;
-}
+h1 { font-size: 6rem; }
+h2 { font-size: 4.5rem; }
+h3 { font-size: 3.5rem; }
+h4 { font-size: 3rem; }
+
 img {
     max-width: 100%;
 }
 /**Utilitarios**/
-.no-marging {
-    margin: 0;
-}
-.no-padding {
-    padding: 0;
-}
-.centrar-text {
-    text-align: center;
-}
+.no-marging { margin: 0; }
+.no-padding { padding: 0; }
+.centrar-text { text-align: center; }
+
+/* Header */
 .header {
-    background-image:url(images/Castillo de Moca);
+    background-image:url("images/Castillo de Moca.jpg");
     height: 55rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right center;
 }
+
 .header_text {
     text-align: center;
     color: var(--blanco);
     margin-top: 4rem;
 }
-@media (min-width: 768x) {
+
+@media (min-width: 768px) {
     .header_text{
-        marin-top:12rem;
+        margin-top: 12rem;
     }
 }
+
 @media (min-width: 768px) {
     .barra {
         display: flex;
         justify-content: space-between;
-        align-items: center
+        align-items: center;
         text-align: center;
         padding-top: 4rem;
     }
 }
 
 /** Estilo del logo **/
-.logo {
-    color: var(--blanco);
-}
+.logo { color: var(--blanco); }
+.logo_nombre { font-weight: 800; }
+.logo_bold { font-weight: 400; }
 
-.logo_nombre {
-    font-weight: 800;
-}
-
-.logo_bold {
-    font-weight: 400;
-}
 /** Estilo de navegación **/
-.navegación {
+.navegacion {
     margin-top: 2rem;
 }
 @media (min-width: 768px) {
@@ -126,14 +110,13 @@ img {
         padding: 1rem;
     }
     .enlace_nav {
-        text-decoration: none;
         background: var(--primario2);
         border-radius: 1.5rem;
         padding: 1rem;
         width: 15rem;
     }
     /* Cambiando el color de los links on hover */
-    nav a: hover {
+    nav a:hover {
         font-weight: 600;
         background: var(--primario1);
     }
@@ -145,6 +128,7 @@ img {
     font-size: 2.2rem;
     color: var(--blanco);
 }
+
 /** Contenido: main **/
 .moca {
     font-weight: 900;
@@ -156,17 +140,19 @@ img {
 #map {
     text-align: center;
 }
-#map image {
+#map img {
     width: 80%;
 }
+
 /** Footer o Pie de la página **/
 .footer {
     background-color: var(--primario3);
     padding-bottom: 3rem;
-    marging-top: 4rem;
+    margin-top: 4rem;
 }
+
 /** Redes sociales **/
-.social-menu {
+.social-menu{
     display: flex;
     gap: 1rem;
     list-style-type: none;
@@ -178,10 +164,10 @@ img {
     height: 5.5rem;
     border-radius: 50%;
     font-size: 3rem;
-    gap: 1rem;
-    transition: all 0.2s ease-in-our;
+    transition: all 0.2s ease-in-out;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -202,22 +188,13 @@ img {
 .social-menu a {
     text-decoration: none;
 }
-.fa-facebook {
-    background: #3b5998
-}
-.fa-linkedin {
-    background: #007bb6
-}
-.fa-twitter {
-    background: #00aced
-}
-.fa-instagram {
-    background: #3f729b
-}
-.fa-youtube {
-    background: #c4302b
-}
-.social-menu i:hove {
+.fa-facebook { background: #3b5998; }
+.fa-linkedin { background: #007bb6; }
+.fa-twitter { background: #00aced; }
+.fa-instagram { background: #3f729b; }
+.fa-youtube { background: #c4302b; }
+
+.social-menu i:hover {
     opacity: 0.7;
     border-radius: 0;
 }
